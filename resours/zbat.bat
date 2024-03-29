@@ -5,18 +5,18 @@ title ZpycuA Bat Rever 5.2
 ECHO --------------------------
 ECHO ZpycuA Bat Rever 5.2
 ECHO --------------------------
-ECHO Ğ¡ÌùÊ¿£ºÔÚµÚÒ»¼¶×Ó½çÃæ¼üÈë"exit"¿ÉÍË³ö¡£
+ECHO å°è´´å£«ï¼šåœ¨ç¬¬ä¸€çº§å­ç•Œé¢é”®å…¥"exit"å¯é€€å‡ºã€‚
 ECHO.
-ECHO 0.¿ì½İÓ¦ÓÃ
+ECHO 0.å¿«æ·åº”ç”¨
 ECHO.
-ECHO 1.ÏµÍ³²Ù×÷
+ECHO 1.ç³»ç»Ÿæ“ä½œ
 ECHO.
-ECHO 2.ÍøÂç²Ù×÷
+ECHO 2.ç½‘ç»œæ“ä½œ
 ECHO.
-ECHO 3.ÉèÖÃ
+ECHO 3.è®¾ç½®
 
 :mainCH
-Set /p a=ÇëÑ¡Ôñ¹¦ÄÜ£º
+Set /p a=è¯·é€‰æ‹©åŠŸèƒ½ï¼š
 If "%a%"=="0" goto linkUI
 If "%a%"=="1" goto toolUI
 If "%a%"=="2" goto webUI
@@ -34,16 +34,16 @@ ECHO --------------------------
 ECHO ZpycuA Bat Rever 5.2\Link
 ECHO --------------------------
 ECHO.
-ECHO 0.Windows ×ÊÔ´¹ÜÀíÆ÷       1.Windows ÈÎÎñ¹ÜÀíÆ÷
+ECHO 0.Windows èµ„æºç®¡ç†å™¨       1.Windows ä»»åŠ¡ç®¡ç†å™¨
 ECHO.
-ECHO 2.Microsoft ¹ÜÀí¿ØÖÆÌ¨     3.¸¨Öú¹¦ÄÜÆÁÄ»¼üÅÌ
+ECHO 2.Microsoft ç®¡ç†æ§åˆ¶å°     3.è¾…åŠ©åŠŸèƒ½å±å¹•é”®ç›˜
 ECHO.
-ECHO 4.Windows ÃüÁî´¦Àí³ÌĞò     5.Windows ´ÅÅÌ¿Õ¼äÇåÀí¹ÜÀíÆ÷
+ECHO 4.Windows å‘½ä»¤å¤„ç†ç¨‹åº     5.Windows ç£ç›˜ç©ºé—´æ¸…ç†ç®¡ç†å™¨
 ECHO.
 ECHO 6.DiskPart
 
 :linkCH
-Set /p a=ÇëÑ¡Ôñ¹¦ÄÜ£º
+Set /p a=è¯·é€‰æ‹©åŠŸèƒ½ï¼š
 If "%a%"=="0" goto 0
 If "%a%"=="1" goto 1
 If "%a%"=="2" goto 2
@@ -65,16 +65,16 @@ ECHO --------------------------
 ECHO ZpycuA Bat Rever 5.2\Tool
 ECHO --------------------------
 ECHO.
-ECHO 0.HTMLä¯ÀÀÆ÷   1.ÈÎÎñÁĞ³ö
+ECHO 0.HTMLæµè§ˆå™¨   1.ä»»åŠ¡åˆ—å‡º
 ECHO.
-ECHO 2.ÇåÀí»º´æ     3.´ÅÅÌĞŞ¸´
+ECHO 2.æ¸…ç†ç¼“å­˜     3.ç£ç›˜ä¿®å¤
 ECHO.
-ECHO 4.ÓÃ»§¹ÜÀí     5.ÎÄ¼şä¯ÀÀ
+ECHO 4.ç”¨æˆ·ç®¡ç†     5.æ–‡ä»¶æµè§ˆ
 ECHO.
-ECHO 6.¹ÜÀíÔ±»ñµÃËùÓĞÈ¨   
+ECHO 6.ç®¡ç†å‘˜è·å¾—æ‰€æœ‰æƒ   
 
 :toolCH
-Set /p a=ÇëÑ¡Ôñ¹¦ÄÜ£º
+Set /p a=è¯·é€‰æ‹©åŠŸèƒ½ï¼š
 If "%a%"=="0" goto 5
 If "%a%"=="1" goto 7
 If "%a%"=="2" goto 9
@@ -95,10 +95,10 @@ ECHO --------------------------
 ECHO ZpycuA Bat Rever 5.2\Web
 ECHO --------------------------
 ECHO.
-ECHO 0.PING      1.Ô¶³Ì¹Ø»ú
+ECHO 0.PING      1.è¿œç¨‹å…³æœº
 
 :webCH
-Set /p a=ÇëÑ¡Ôñ¹¦ÄÜ£º
+Set /p a=è¯·é€‰æ‹©åŠŸèƒ½ï¼š
 If "%a%"=="0" goto 6
 If "%a%"=="1" goto 14
 If "%a%"=="exit" goto mainUI
@@ -114,14 +114,14 @@ ECHO --------------------------
 ECHO ZpycuA Bat Rever 5.2\Set
 ECHO --------------------------
 ECHO.
-ECHO 0.¹ØÓÚ     1.°ïÖú
+ECHO 0.å…³äº     1.å¸®åŠ©
 ECHO.
-ECHO 2.ÍË³ö     3.¼ì²é¸üĞÂ
+ECHO 2.é€€å‡º     3.æ£€æŸ¥æ›´æ–°
 ECHO.
-ECHO 4.¸öĞÔ»¯   5.È¨ÏŞ¼ì²â
+ECHO 4.ä¸ªæ€§åŒ–   5.æƒé™æ£€æµ‹
     
 :setCH
-Set /p a=ÇëÑ¡Ôñ¹¦ÄÜ£º
+Set /p a=è¯·é€‰æ‹©åŠŸèƒ½ï¼š
 If "%a%"=="0" goto a
 If "%a%"=="1" goto h
 If "%a%"=="2" goto q
@@ -159,14 +159,14 @@ goto linkUI
 exit
 
 :5
-Set /p b=ÇëÊäÈëURL£º
+Set /p b=è¯·è¾“å…¥URLï¼š
 start hh "%b%"
 pause
 goto toolUI
 
 
 :6
-Set /p c=ÇëÊäÈëIP£º
+Set /p c=è¯·è¾“å…¥IPï¼š
 ping "%c%"
 pause
 goto webUI
@@ -195,49 +195,49 @@ if %errorlevel% NEQ 0 PAUSE
 if %errorlevel% NEQ 0 GOTO J1
 
 :J1
-echo ´ÓÏÂÔØ
+echo ä»ä¸‹è½½
 pause
 goto setUI
 
 :H.bak
 echo ZpycuA Bat Rever
-echo  ¹ØÓÚ
-echo    ZpycuA Bat ReverÊÇÒ»¿îÇá±ãµÄWindows¹ÜÀí¹¤¾ß£¬Ä¿Ç°Îªbat-beta°æ±¾
-echo    ×÷ÕßzjyAilmf
-echo  ÓÃ·¨
-echo    ÔÚÔËĞĞÍê³Éºó£¬ÊäÈëÊı×ÖÑ¡ÏîÈ»ºó°´Ender¼´¿É
-echo  ¹¦ÄÜ
-echo    0.×ÊÔ´¹ÜÀíÆ÷
-echo    1.ÈÎÎñ¹ÜÀíÆ÷
-echo    2.¹ÜÀí¿ØÖÆÌ¨
-echo    3.ĞéÄâ¼üÅÌ 
-echo    4.¸ß¼¶ÉèÖÃ
-echo    5.ä¯ÀÀÆ÷
+echo  å…³äº
+echo    ZpycuA Bat Reveræ˜¯ä¸€æ¬¾è½»ä¾¿çš„Windowsç®¡ç†å·¥å…·ï¼Œç›®å‰ä¸ºbat-betaç‰ˆæœ¬
+echo    ä½œè€…zjyAilmf
+echo  ç”¨æ³•
+echo    åœ¨è¿è¡Œå®Œæˆåï¼Œè¾“å…¥æ•°å­—é€‰é¡¹ç„¶åæŒ‰Enderå³å¯
+echo  åŠŸèƒ½
+echo    0.èµ„æºç®¡ç†å™¨
+echo    1.ä»»åŠ¡ç®¡ç†å™¨
+echo    2.ç®¡ç†æ§åˆ¶å°
+echo    3.è™šæ‹Ÿé”®ç›˜ 
+echo    4.é«˜çº§è®¾ç½®
+echo    5.æµè§ˆå™¨
 echo    6.PING
-echo    7.ÈÎÎñÁĞ³ö
-echo    8.´ÅÅÌÇåÀí
-echo    9.ÇåÀí»º´æ
-echo    10.´ÅÅÌĞŞ¸´
-echo    11.´ÅÅÌ¹ÜÀí
-echo    A.¹ØÓÚ
+echo    7.ä»»åŠ¡åˆ—å‡º
+echo    8.ç£ç›˜æ¸…ç†
+echo    9.æ¸…ç†ç¼“å­˜
+echo    10.ç£ç›˜ä¿®å¤
+echo    11.ç£ç›˜ç®¡ç†
+echo    A.å…³äº
 echo    H.HELP
-echo    Q.ÍË³ö 
-echo  ¿ª·¢ÕßÑ¡Ïî
-echo    ÔÚÖ÷²Ëµ¥ÔËĞĞ''debug''ÒÔ½øÈë
+echo    Q.é€€å‡º 
+echo  å¼€å‘è€…é€‰é¡¹
+echo    åœ¨ä¸»èœå•è¿è¡Œ''debug''ä»¥è¿›å…¥
 echo    0.Back
 echo    1.Command
 echo    2.Settitle
 echo    3.Run
 echo    4.Checkversion 
-echo  °æ±¾
-echo    ×îĞÂ°æ±¾5.1
+echo  ç‰ˆæœ¬
+echo    æœ€æ–°ç‰ˆæœ¬5.1
 echo ---------------------------
 echo     Copyright ? 2023 . All Rights Reserved. 
 pause
 goto setUI
 
 :who
-echo µ±Ç°ZpycuA Bat Rever¿ÉÊ¹ÓÃÈ¨ÏŞ:
+echo å½“å‰ZpycuA Bat Reverå¯ä½¿ç”¨æƒé™:
 whoami
 pause
 goto setUI
@@ -269,7 +269,7 @@ pause
 goto toolUI
 
 :10
-Set /p d=ÇëÊäÈëÅÌ·û£º
+Set /p d=è¯·è¾“å…¥ç›˜ç¬¦ï¼š
 chkdsk "%d%" /f
 pause
 goto toolUI
@@ -280,26 +280,26 @@ pause
 goto linkUI
 
 :12
-Set /p t=ÇëÊäÈëÃüÁî£º
+Set /p t=è¯·è¾“å…¥å‘½ä»¤ï¼š
 net user %t%
 pause
 goto toolUI
 
 :13
-Set /p e=ÇëÑ¡Ôñ(1.ÁĞ³ö 2.¶ÁÈ¡£©£º
+Set /p e=è¯·é€‰æ‹©(1.åˆ—å‡º 2.è¯»å–ï¼‰ï¼š
 If "%e%"=="1" goto 13.1
 If "%e%"=="2" goto 13.2
 
 :13.1
-Set /p r=Ä¿Â¼£º
+Set /p r=ç›®å½•ï¼š
 cd %r%
 dir
 pause
 goto toolUI
 
 :13.2
-Set /p r=Ä¿Â¼£º
-Set /p w=´ò¿ª·½Ê½£º
+Set /p r=ç›®å½•ï¼š
+Set /p w=æ‰“å¼€æ–¹å¼ï¼š
 start %w% %r%
 pause
 goto toolUI
@@ -345,7 +345,7 @@ Echo 6.Variablelists
 ECHO.
     
 :ddesk
-Set /p a=ÇëÑ¡Ôñ¹¦ÄÜ£º
+Set /p a=è¯·é€‰æ‹©åŠŸèƒ½ï¼š
 If "%a%"=="0" goto mainUI
 If "%a%"=="1" cmd
 If "%a%"=="2" goto d2
@@ -353,31 +353,31 @@ If "%a%"=="3" goto d3
 If "%a%"=="4" goto j
 If "%a%"=="5" goto d5
 If "%a%"=="6" goto d6
-Echo ZpycuA Bat ReverÔËĞĞÊ±³ö´í
+Echo ZpycuA Bat Reverè¿è¡Œæ—¶å‡ºé”™
 Echo [Error]The input value "%a%" is not defined.
 pause
 goto D
 
 :d2
-Set /p b=Press in title£º
+Set /p b=Press in titleï¼š
 title ZpycuA Bat Rever\%b%
 pause
 goto D
 
 :d3
-Set /p c=Press to run£º
+Set /p c=Press to runï¼š
 %c%
 pause
 goto D
 
 :d5
-Set /p f=Press in£º
+Set /p f=Press inï¼š
 goto %f%
 pause
 goto D
 
 :d6
-Set /p w=Press in VariableName£º
+Set /p w=Press in VariableNameï¼š
 set %w%
 pause
 goto D
